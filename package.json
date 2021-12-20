@@ -1,0 +1,25 @@
+{
+    "name": "api-projekt",
+    "version": "1.0.0",
+    "description": "Projekt grupp 9",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon ./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PugsNotDrugs96/API-projekt.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PugsNotDrugs96/API-projekt/issues"
+    },
+    "homepage": "https://github.com/PugsNotDrugs96/API-projekt#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "express": "^4.17.2"
+    }
+}
