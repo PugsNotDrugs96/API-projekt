@@ -1,11 +1,21 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/index.html");
+});
+
+app.post("/", function(req, res) {
+
+    var phoneNumber = req.body.num1;
+    res.send("The resoult is" + phoneNumber);
+});
+
+
+app.listen(3000, function() {
+    console.log("Server is running on port: 3000");
+});
