@@ -1,7 +1,7 @@
 body {
-    font: 18px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #ffffff;
+  font: 18px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #ffffffe9;
 }
 
 p {
@@ -13,80 +13,139 @@ h1 {
 }
 
 .bg-1 { 
-background-color: #141414 ; 
-color: #ffffffe9;
+  background-color: #141414 ; 
+  color: #ffffffe9;
 }
 
 .bg-2 { 
-background-color: #ffffff; 
-color: #000000;
+  background-color: #ffffffe9; 
+  color: #000000;
 }
 
 .container-fluid {
-padding-top: 50px;
-padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navbar {
-padding-top: 15px;
-padding-bottom: 15px;
-border: 0;
-border-radius: 0;
-margin-bottom: 0;
-font-size: 18px;
-letter-spacing: 5px;
-background-color: #ffffff ;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  letter-spacing: 5px;
+  background-color: #ffffff ;
 }
 
 .navbar-nav  li a:hover {
-color: #000000 !important;
+  color: #000000 !important;
 }
 
 input {
-color: #000;
--webkit-text-fill-color: #000;
+  color: #000000;
+  -webkit-text-fill-color: #000000;
 }
 
 input[type="number"] {
-width: 100px;
-margin-bottom: 50px;
-color: #000;
+  width: 100px;
+  margin-bottom: 50px;
+  color: #000000;
 }
 
 input + span {
-padding-right: 10px;
+  padding-right: 10px;
 }
 
 input:invalid+span:after {
-position: absolute; content: '✖';
-padding-left: 5px;
-color: #8b0000;
+  position: absolute; content: '✖';
+  padding-left: 5px;
+  color: #8b0000;
 }
 
 input:valid+span:after {
-position: absolute;
-content: '✓';
-padding-left: 5px;
-color: #009000;
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+  color: #009000;
 }
 
 .formButton {
-background-color:#ee9393;
-display:inline-block;
-color:#000000;
-font-size: 20px;
-padding:6px 24px;
-margin: 30px;
-text-decoration:none;
+  background-color:#ee9393;
+  display:inline-block;
+  color:#000000;
+  font-size: 20px;
+  padding:6px 24px;
+  margin: 30px;
+  text-decoration:none;
 }
 
 label { 
   display: block; 
 }
 
+/*THE FOLLOWING CSS APPLIES TO THE UNSUBSCRIBE FORM*/
 
-/* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: green;
+/* Button used to open the contact form */
+.open-button {
+  background-color: #141414;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin: auto;
+  width: 300px;
+  border-top: 1px solid white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #141414;
+}
+
+/* Full-width input field*/
+.form-container input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=tel]:focus, .form-container  {
+  outline: none;
+  border: 1px solid #f1f1f1;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
