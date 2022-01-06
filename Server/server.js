@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
 
     var phoneNumber = req.body.num1;
-    res.send("The resoult is" + phoneNumber);
+    res.send("The result is" + phoneNumber);
 });
 
 
